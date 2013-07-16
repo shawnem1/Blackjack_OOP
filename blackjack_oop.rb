@@ -1,6 +1,3 @@
-#require 'rubygems'
-#require 'pry'
-
 class Card
 
   attr_accessor :suit, :value
@@ -273,19 +270,3 @@ end
 
 game = Blackjack.new
 game.start
-
-################################################
-=begin
-deck = Deck.new
-deck.shuffle_deck
-dealer = Dealer.new
-puts "Please enter your name"
-player = Player.new(gets.chomp)
-puts "Welcome to Ruby Blackjack, #{player.name}."
-player.add_card(deck.deal_one)
-player.add_card(deck.deal_one)
-player.show_hand
-dealer.add_card(deck.deal_one)
-dealer.add_card(deck.deal_one)
-dealer.show_hand
-=end
